@@ -14,7 +14,9 @@ Status of Tests:<br>
 График зависимости написал отдельным файлом [тут](https://github.com/Anastasiyakorepanova/--2/blob/main/graphs.py)
 
 Ссылка на [файл с тестом который проверет время](https://github.com/Anastasiyakorepanova/--2/blob/main/checking_time.class)
+
 Ссылка на [файл с рандомным тестом](https://github.com/Anastasiyakorepanova/--2/blob/main/Main.class)
+
 Ссылка на [файл на правильный код](https://github.com/Anastasiyakorepanova/--2/blob/main/Checking_cor.class)
 
 Ссылка на программу, проверяющую время работы программы в зависимости от количества цифр в файле.[тут](https://github.com/Anastasiyakorepanova/--2/blob/main/graphs.py)
