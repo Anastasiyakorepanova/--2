@@ -2,7 +2,9 @@ name: Java Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, develop ] 
+  pull_request:
+    branches: [master, develop]
   workflow_dispatch:
 
 jobs:
