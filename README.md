@@ -17,7 +17,7 @@ Status of Tests:<br>
 
 Ссылка на [файл с рандомным тестом](https://github.com/Anastasiyakorepanova/--2/blob/main/Main.class)
 
-Ссылка на [файл на правильный код](https://github.com/Anastasiyakorepanova/--2/blob/main/Checking_cor.class)
+Ссылка на [файл который проверяет код на правильность работы](https://github.com/Anastasiyakorepanova/--2/blob/main/Checking_cor.class)
 
 Ссылка на программу, проверяющую время работы программы в зависимости от количества цифр в файле.[тут](https://github.com/Anastasiyakorepanova/--2/blob/main/graphs.py)
 
