@@ -1,0 +1,44 @@
+import java.io.IOException;
+import java.math.BigInteger;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Arrays;
+
+public class Main {
+    private BigInteger[] numbers;
+
+    public Main(String filePath) throws IOException {
+        String content = new String(Files.readAllBytes(Paths.get(filePath)));
+        numbers = Arrays.stream(content.split("\\s+"))
+                .map(BigInteger::new)
+                .toArray(BigInteger[]::new);
+    }
+
+    public BigInteger _min() {
+        return Arrays.stream(numbers).min(BigInteger::compareTo).orElseThrow();
+    }
+
+    public BigInteger _max() {
+        return Arrays.stream(numbers).max(BigInteger::compareTo).orElseThrow();
+    }
+
+    public BigInteger _sum() {
+        return Arrays.stream(numbers).reduce(BigInteger.ZERO, BigInteger::add);
+    }
+
+    public BigInteger _mult() {
+        return Arrays.stream(numbers).reduce(BigInteger.ONE, BigInteger::multiply);
+    }
+
+    public static void main(String[] args) {
+        try {
+            Main main = new Main("checking_correct_test.txt");
+            System.out.println("Минимальное: " + main._min());
+            System.out.println("Максимальное: " + main._max());
+            System.out.println("Сумма: " + main._sum());
+            System.out.println("Произведение: " + main._mult());
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+        }
+    }
+}
