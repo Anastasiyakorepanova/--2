@@ -11,7 +11,6 @@ public class MainTest {
 
     @Before
     public void setUp() throws IOException {
-        // Создаем временный файл с числами для тестирования
         Files.write(Paths.get("checking_correct_test.txt"), "1 2 3 4 5 100 0".getBytes());
         main = new Main("test_numbers.txt");
     }
@@ -28,19 +27,19 @@ public class MainTest {
 
     @Test
     public void testSum() {
-        BigInteger expectedSum = new BigInteger("115"); // 1+2+3+4+5+100+0
+        BigInteger expectedSum = new BigInteger("115");
         assertEquals(expectedSum, main._sum());
     }
 
     @Test
     public void testMult() {
-        BigInteger expectedProduct = new BigInteger("0"); // Поскольку одно из чисел 0, произведение будет 0
+        BigInteger expectedProduct = new BigInteger("0"); 
         assertEquals(expectedProduct, main._mult());
     }
 
     @After
     public void tearDown() throws IOException {
         // Удаляем файл после завершения тестов
-        Files.delete(Paths.get("test_numbers.txt"));
+        Files.delete(Paths.get("checking_correct_test.txt"));
     }
 }
