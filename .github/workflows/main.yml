@@ -20,4 +20,4 @@ jobs:
       - name: Compile Java code
         run: javac -d build/classes src/main/java/*.java
       - name: Run Tests
-        run: java -cp build/classes:build/test-classes src/test/java/*.java
+        run: java -cp build/classes:build/test-classes main.Main
