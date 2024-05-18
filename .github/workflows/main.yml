@@ -18,6 +18,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Compile Java code
-        run: javac -d build/classes src/main/java/*.java
+        run: javac -d build/classes main.Main
       - name: Run Tests
         run: java -cp build/classes:build/test-classes main.Main
